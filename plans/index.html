@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<div id="loading-container">
+  <div class="loader-dots">
+    <div class="loader-dot"></div>
+    <div class="loader-dot"></div>
+    <div class="loader-dot"></div>
+  </div>
+  <script>
+    const menuIcon = document.querySelector('.menu-icon');
+      const navLinks = document.querySelector('.nav-links');
+      
+      menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+      window.addEventListener('load', function () {
+const loadingContainer = document.getElementById('loading-container');
+loadingContainer.style.opacity = "0"; // Fade-out effect
+setTimeout(() => {
+  loadingContainer.style.display = 'none'; // Completely hide
+}, 500); // Match the fade-out duration
+});
+      </script>
+
+</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hosting Plans - LostHosting</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LostHosting - Hosting Plans">
+  <meta property="og:description" content="Explore our affordable hosting plans that fit your needs. From personal websites to high-demand services.">
+  <meta property="og:image" content="https://example.com/image.jpg">
+  <meta property="og:url" content="https://losthosting.sytes.net/plans">
+  <meta property="og:site_name" content="LostHosting">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Link to Stylesheets and Fonts -->
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://cdn.discordapp.com/attachments/894749835742294038/1310225367205937202/LostHostingLogo.png?ex=674471f6&is=67432076&hm=553b7578b4de027675684135eae39e4edfbc85f882d8681924eda7c33660c86c&" alt="LostHosting Logo">
+    </div>
+    <div class="nav-links">
+      <a href="https://discord.gg/8mfE5yjHTJ"><i class="fas fa-comments"></i> Discord Server</a>
+      <a href="https://panel.ryzencloud.host/"><i class="fas fa-cogs"></i> Panel</a>
+      <a href="https://losthosting.sytes.net/about"><i class="fas fa-users"></i> About Us</a>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    </div>
+  </nav>
+
+  <!-- Plans Section -->
+  <section class="plans">
+    <div class="container">
+      <h1>Our Hosting Plans</h1>
+      <p>Choose the best hosting plan for your needs. Whether you're starting small or need premium features, we've got you covered.</p>
+      
+      <div class="plan-cards">
+        <div class="card">
+          <h3><i class="fas fa-server"></i> Plan #1</h3>
+          <p>8 GB RAM | 20 GB SSD | 100% CPU</p>
+          <p class="price">₹200/$3/m</p>
+          <p>Perfect for small websites and apps</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-hdd"></i> Plan #2</h3>
+          <p>12 GB RAM | 25 GB SSD | 150% CPU</p>
+          <p class="price">₹330/$6/m</p>
+          <p>Great for medium-sized apps and websites</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-cloud"></i> Plan #3</h3>
+          <p>16 GB RAM | 40 GB SSD | 250% CPU</p>
+          <p class="price">₹500/$7/m</p>
+          <p>Ideal for growing businesses</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-network-wired"></i> Plan #4</h3>
+          <p>24 GB RAM | 60 GB SSD | 400% CPU</p>
+          <p class="price">₹800/$10/m</p>
+          <p>Best for high-demand services</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-database"></i> Plan #5</h3>
+          <p>32 GB RAM | 90 GB SSD | 800% CPU</p>
+          <p class="price">₹1000/$12/m</p>
+          <p>For premium performance</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="note">
+        <p>Note: Create a ticket to buy in the Billing category 🎫〢ᴛɪᴄᴋᴇᴛ</p>
+      </div>
+      <div class="payment-methods">
+        <p>Payment Methods: UPI + PayPal</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 LostHosting. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
