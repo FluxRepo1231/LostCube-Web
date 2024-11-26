@@ -1,109 +1,388 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <link rel="icon" href="https://i.imgur.com/Gr8XX17.png" type="image/x-icon">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hosting Plans - LostHosting</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta author="Flux">
+    <title>Hosting Plans - LostHosting</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://i.imgur.com/seaU5sE.png"/>
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="LostHosting - Hosting Plans">
-  <meta property="og:description" content="Explore our affordable hosting plans that fit your needs. From personal websites to high-demand services.">
-  <meta property="og:image" content="https://example.com/image.jpg">
-  <meta property="og:url" content="https://losthosting.sytes.net/plans">
-  <meta property="og:site_name" content="LostHosting">
-  <meta property="og:locale" content="en_US">
+    <!-- Bootstrap v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-  <!-- Link to Stylesheets and Fonts -->
-  <link rel="stylesheet" href="../styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- OWL Slider v2.3.4 -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> 
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="https://i.imgur.com/seaU5sE.png" alt="LostHosting Logo">
+            </div>
+        </div>
     </div>
-    <div class="nav-links">
-      <a href="https://discord.gg/8mfE5yjHTJ"><i class="fas fa-comments"></i> Discord Server</a>
-      <a href="https://panel.ryzencloud.host/"><i class="fas fa-cogs"></i> Panel</a>
-      <a href="https://losthosting.sytes.net/about"><i class="fas fa-users"></i> About Us</a>
-      <a href="https://losthosting.sytes.net/plans/planmaker"><i class="fas fa-toolbox"></i> Builder</a>
-      <a href="https://losthosting.sytes.net"><i class="fas fa-home"></i> Home</a>
+</div>    
+    <div class="object_1 text-center">
+        <img src="assets/images/vector_object_1.png" class="img-fluid">
     </div>
-  </nav>
-  <script>
-    const menuIcon = document.querySelector('.menu-icon');
-      const navLinks = document.querySelector('.nav-links');
-      
-      menuIcon.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-      });
-      </script>
+    
+	<nav>
+		<div class="logo">
+		  <img src="https://i.imgur.com/seaU5sE.png" alt="LostHosting Logo" class="logo-image">
+		</div>
+		<div class="nav-links">
+		  <a href="https://discord.gg/8mfE5yjHTJ"><i class="fas fa-comments"></i> Discord Server</a>
+		  <a href="https://panel.ryzencloud.host/"><i class="fas fa-cogs"></i> Panel</a>
+		  <a href="https://losthosting.sytes.net/about"><i class="fas fa-info-circle"></i> About Us</a>
+          <a href="https://losthosting.sytes.net/plans/planmaker"><i class="fas fa-toolbox"></i> Builder</a>
+		  <a href="https://losthosting.sytes.net"><i class="fas fa-home"></i> Home</a>
 
-  <!-- Plans Section -->
-  <section class="plans">
-    <div class="container">
-      <h1>Our Hosting Plans</h1>
-      <p>Choose the best hosting plan for your needs. Whether you're starting small or need premium features, we've got you covered.</p>
-      
-      <div class="plan-cards">
-        <div class="card">
-          <h3><i class="fas fa-server"></i> Plan #1</h3>
-          <p>8 GB RAM | 20 GB SSD | 100% CPU</p>
-          <p class="price">₹200/$3/m</p>
-          <p>Perfect for small websites and apps</p>
-          <a href="#" class="btn">Buy Now</a>
-        </div>
-        <div class="card">
-          <h3><i class="fas fa-hdd"></i> Plan #2</h3>
-          <p>12 GB RAM | 25 GB SSD | 150% CPU</p>
-          <p class="price">₹330/$6/m</p>
-          <p>Great for medium-sized apps and websites</p>
-          <a href="#" class="btn">Buy Now</a>
-        </div>
-        <div class="card">
-          <h3><i class="fas fa-cloud"></i> Plan #3</h3>
-          <p>16 GB RAM | 40 GB SSD | 250% CPU</p>
-          <p class="price">₹500/$7/m</p>
-          <p>Ideal for growing businesses</p>
-          <a href="#" class="btn">Buy Now</a>
-        </div>
-        <div class="card">
-          <h3><i class="fas fa-network-wired"></i> Plan #4</h3>
-          <p>24 GB RAM | 60 GB SSD | 400% CPU</p>
-          <p class="price">₹800/$10/m</p>
-          <p>Best for high-demand services</p>
-          <a href="#" class="btn">Buy Now</a>
-        </div>
-        <div class="card">
-          <h3><i class="fas fa-database"></i> Plan #5</h3>
-          <p>32 GB RAM | 90 GB SSD | 800% CPU</p>
-          <p class="price">₹1000/$12/m</p>
-          <p>For premium performance</p>
-          <a href="#" class="btn">Buy Now</a>
-        </div>
-      </div>
+		</div>
+	  </nav>
 
-      <div class="note">
-        <p>Note: Create a ticket to buy in the Billing category 🎫〢ᴛɪᴄᴋᴇᴛ</p>
-      </div>
-      <div class="payment-methods">
-        <p>Payment Methods: UPI + PayPal</p>
-      </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 LostHosting. All rights reserved.</p>
-      </div>
+</nav>
+    <!-- Header -->
+    <div class="header header_game" style="background: url('assets/images/games_banner/minecraft.png');">
+        <div class="container-fluid container-custom">
+            <div class="text-center">
+                <h2 class="mb-2">Our Hosting Plans</h2>
+                <p>Find the perfect hosting plan tailored to your needs. From budget-friendly options to feature-packed premium solutions, we’ve got everything you need to succeed.</p>
+                </ul>
+            </div>
+        </div>
     </div>
-  </footer>
 
+    <!-- Game Plans -->
+    <div class="game_plans py-5">
+        <div class="container-fluid container-custom">
+            <div class="site_title">
+                <h2>Our Server Plans</h2>
+            </div>
+            <div class="tab-content">
+                <!-- Budget Plans -->
+                <div id="budget" class="tab-pane active">
+                    <div class="row">
+                        <!-- Plans One -->
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h2 class="mb-4">Plan #1</h2>
+                                    <div class="card-value mb-4 text-center">
+                                        <span>&dollar;₹200/$3 First Month</span>
+                                    </div>
+                                    <h3 class="text-center mb-4">8 GB</h3>
+                                    <div class="row mb-4">
+                                        <div class="col-sm-6">
+                                            <p>SSD Storage <span>20 GB</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Fast Support <span>24 / 7</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Processor <span>AMD Eypc 7k62</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Instant <span>Setup</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="https://discord.gg/8mfE5yjHTJ" class="btn">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Plans Two -->
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h2 class="mb-4">Plan #2</h2>
+                                    <div class="card-value mb-4 text-center">
+                                        <span>&dollar;₹330/$6/ First Month</span>
+                                    </div>
+                                    <h3 class="text-center mb-4">12GB</h3>
+                                    <div class="row mb-4">
+                                        <div class="col-sm-6">
+                                            <p>SSD Storage <span>25 GB</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Fast Support <span>24 / 7</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Processor <span>AMD Eypc 7k62</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Instant <span>Setup</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="https://discord.gg/8mfE5yjHTJ" class="btn">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Plans Three -->
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h2 class="mb-4">Plan #3</h2>
+                                    <div class="card-value mb-4 text-center">
+                                        <span>&dollar;₹500/$7/ First Month</span>
+                                    </div>
+                                    <h3 class="text-center mb-4">16GB</h3>
+                                    <div class="row mb-4">
+                                        <div class="col-sm-6">
+                                            <p>SSD Storage <span>40 GB</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Fast Support <span>24 / 7</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Processor <span>AMD Eypc 7k62</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Instant <span>Setup</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="https://discord.gg/8mfE5yjHTJ" class="btn">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Plans Four -->
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h2 class="mb-4">Plan #4</h2>
+                                    <div class="card-value mb-4 text-center">
+                                        <span>&dollar;₹800/$10/ First Month</span>
+                                    </div>
+                                    <h3 class="text-center mb-4">24GB</h3>
+                                    <div class="row mb-4">
+                                        <div class="col-sm-6">
+                                            <p>SSD Storage <span>60 GB</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Fast Support <span>24 / 7</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Processor <span>AMD Eypc 7k62</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Instant <span>Setup</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="https://discord.gg/8mfE5yjHTJ" class="btn">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h2 class="mb-4">Plan #5</h2>
+                                    <div class="card-value mb-4 text-center">
+                                        <span>&dollar;₹1000/$12/ First Month</span>
+                                    </div>
+                                    <h3 class="text-center mb-4">32GB</h3>
+                                    <div class="row mb-4">
+                                        <div class="col-sm-6">
+                                            <p>SSD Storage <span>90 GB</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Fast Support <span>24 / 7</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Processor <span>AMD Eypc 7k62</span></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Instant <span>Setup</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="https://discord.gg/8mfE5yjHTJ" class="btn">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="container-fluid container-node">
+                                        <div class="row d-flex justify-content-between">
+                                            <div class="col-lg-4 col-md-4 d-flex align-items-center">
+                                                <div class="d-flex align-items-center me-auto new-sale-left">
+                                                    <span class="unlimited-text">Unlimited</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 d-flex align-items-center">
+                                                <div class="d-flex align-items-center mx-auto new-sale-center">
+                                                    <div class="text-center">
+                                                        <h6 class="price-text my-0">
+                                                            <span class="price text-light fw-bold title-dark h1 mb-0">+100&dollar;</span>
+                                                            <span class="h7 align-self-end mb-1">/ first month</span>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 d-flex justify-content-between">
+                                                <div class="d-flex align-items-center ms-auto new-sale-right">
+                                                    <a href="https://discord.gg/8mfE5yjHTJ" class="btn">Contact us</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="specs py-1">
+                <div class="container-fluid container-custom">
+                    <div class="site_title text-center mb-4">
+                        <h2>Plans</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7 mx-auto">
+                            <table class="text-center w-100">
+                                <thead class="d-none">
+                                    <tr>
+                                        <th>specs</th>
+                                        <th>premium</th>
+                                        <th>standard</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="specs" class="specification">
+                                            <h2 class="specs-title">Spec</h2>
+                                            <span class="specs-text w-100 d-block text-end">RAM</span>
+                                            <span class="specs-text w-100 d-block text-end">CPU</span>
+                                            <span class="specs-text w-100 d-block text-end">SSD</span>
+                                            <span class="specs-text w-100 d-block text-end">Backups</span>
+                                            <span class="specs-text w-100 d-block text-end">24/7 Support</span>
+                                            <span class="specs-text w-100 d-block text-end">Location</span>
+                                            <span class="specs-text w-100 d-block text-end">Database</span>
+                                            <span class="specs-text w-100 d-block text-end">Setup</span>
+                                            <span class="specs-text w-100 d-block text-end">Allocations</span>
+                                            <span class="specs-text w-100 d-block text-end">DDoS Protection</span>
+                                        </td>
+                                        <td data-label="premium" class="premium">
+                                            <h2>Unlimited</h2>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">RAM:</span> DDR4 3600
+                                            Mhz</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">CPU:</span> AMD Eypc 7k62</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">SSD:</span> NVMe (Unlimited
+                                            )</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">Backups:</span> 2 And Renewing</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">24/7 Support:</span>
+                                            Panel & Plugins Install</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">Lokation:</span>India</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">MySQL Database:</span> <span class="yellow">&#x2714;</span></span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">Subdomæner:</span> <span class="yellow">&#x2714;</span></span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">Frit antal slots:</span> <span class="yellow">&#x2714;</span></span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">Minecraft Hosting:</span> <span class="yellow">&#x2714;</span></span>
+                                        </td>
+                                        <td data-label="standard" style="background: var(--dark-color);">
+                                            <h2 class="text-white">Base</h2>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-darke">RAM:</span> DDR4 3600
+                                            Mhz</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-darke">CPU:</span> RAMD Eypc 7k62</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-darke">SSD:</span> Plan Selected</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-darke">Backups:</span> 1
+                                            </span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-darke">24/7 Support:</span>
+                                            Server Setup Erros</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">Location:</span>India</span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">Database:</span> <span class="red">&times;</span></span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">Subdomæner:</span> <span class="red">&times;</span></span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-white">Frit antal slots:</span> <span class="red">&times;</span></span>
+                                            <span class="w-100 d-block"><span class="fw-bolder text-darke">Minecraft Hosting:</span> <span class="red">&times</span></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container-fluid container-custom">
+            <div class="need_more py-5 px-5 mb-5">
+                <span class="need_more_icon"></span>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-8 col-md-8">
+                        <h2>Need to know more?</h2>
+                        <p>If you have any questions about any of our services, do not hesitate to reach out by getting in contact with us. We are here to serve you!</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex align-items-center">
+                        <div class="need_more_right float-end">
+                            <a href="https://discord.gg/8mfE5yjHTJ" class="btn">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer_links">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-4">
+                        </div>
+                    </div>
+                </div>
+                <p class="mb-0 white-text">&copy; 2024 LostHosting. All Rights Reserved.</p>
+        </footer>
+    <!-- Jquery v3.6.1 -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap v5.2.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- OWL Slider v2.3.4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Web Site Cookie -->
+    <script src="https://cdn.websitepolicies.io/lib/cookieconsent/cookieconsent.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+    // Products  //
+    $(document).ready(function() {
+        $('a[data-bs-toggle="tab"]').on('show.bs.tab', function(e) {
+            localStorage.setItem('activeTab', $(e.target).attr('href'));
+        });
+        var activeTab = localStorage.getItem('activeTab');
+        if (activeTab) {
+            $('#swicherMC a[href="' + activeTab + '"]').tab('show');
+        }
+    });
+
+    // Panel Preview //
+    jQuery("#panel").owlCarousel({autoplay:!1,rewind:!0,margin:0,mouseDrag: true,nav:false,dots:false,lazyLoad:!0,items:1});
+
+    // Youtube Close //
+    $('.modal').on('hide.bs.modal',function(){var memory=$(this).html();$(this).html(memory);});
+    </script>
 </body>
 </html>
