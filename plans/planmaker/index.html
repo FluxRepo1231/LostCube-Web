@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta author="Flux">
+    <title>Plan Maker | LostHosting</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.png"/>
+
+    <!-- Bootstrap v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- OWL Slider v2.3.4 -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
+	<link rel="stylesheet" href="/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+	<nav>
+		<div class="logo">
+		  <img src="https://i.imgur.com/seaU5sE.png" alt="LostHosting Logo" class="logo-image">
+		</div>
+		<div class="nav-links">
+		  <a href="https://discord.gg/8mfE5yjHTJ"><i class="fas fa-comments"></i> Discord Server</a>
+		  <a href="https://panel.ryzencloud.host/"><i class="fas fa-cogs"></i> Panel</a>
+		  <a href="https://losthosting.sytes.net/about"><i class="fas fa-info-circle"></i> About Us</a>
+		  <a href="https://losthosting.sytes.net/plans"><i class="fas fa-clipboard-list"></i> Plans</a>
+		  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+
+		</div>
+	  </nav>
+    <!-- Header -->
+	<div class="header">
+		<div class="container-fluid container-custom">
+			<div class="text-center">
+				<h2 class="mb-2">Lost Hosting</h2>
+				<p class="lead text-muted mb-5">Full root access on high-performance hardware, with game-specialized DDoS protection included.</p>
+			</div>
+		</div>
+	</div>
+
+    <div class="vps_plans py-5">
+        <div class="container-fluid container-custom">
+            <div class="card">
+                <div class="card-body">
+                    <input type="range" min="1" max="6" value="2" step="1" class="slider my-4" id="rangeSelector">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-lg-9 d-flex align-items-center">
+                            <div class="row w-100">
+                                <div class="col-sm-3 text-center">
+                                    <span class="value" id="coreValue">%</span>
+                                    <span class="label">AMD Eypc 7k62 </span>
+                                </div>
+                                <div class="col-sm-3 text-center">
+                                    <span class="value" id="ramValue">GB</span>
+                                    <span class="label">DDR4 RAM</span>
+                                </div>
+                                <div class="col-sm-3 text-center">
+                                    <span class="value" id="ssdValue">GB</span>
+                                    <span class="label">NVMe SSD Storage</span>
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-lg-3">
+							<div class="card card_total">
+								<div class="card-body text-center">
+									<a class="btn btn-primary btn-lg rounded-pill shadow-sm px-4 py-2" id="buyLink" href="https://discord.gg/8mfE5yjHTJ">
+										Buy Now
+									</a>
+								</div>
+							</div>
+						</div>
+						<style>
+							nav {
+  position: sticky;
+  top: 0;
+  background-color: #1a1919;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  padding: 15px 30px; /* Increased padding for a more spacious look */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #1a1919, #353535);
+  z-index: 999;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #00ff00;
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #00ff00;
+}
+
+.nav-links a i {
+  margin-right: 8px;
+  transition: transform 0.3s;
+}
+
+.nav-links a:hover i {
+  transform: rotate(10deg);  /* Slight rotation on hover */
+}
+
+nav .logo img:hover{
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.white-text {
+    color: white;
+}
+							.row.d-flex.justify-content-center {
+								display: flex;
+								justify-content: center;
+							}
+						
+							.col-sm-3.text-center {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								text-align: center;
+							}
+						
+							.value {
+								font-size: 1.2rem;
+								font-weight: bold;
+							}
+						
+							.label {
+								font-size: 1rem;
+								color: #6c757d;
+							}
+						</style>
+						
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
+                    <p class="text-center need_help py-3">Need help choosing the right plan for your needs? Just get in touch with us, we will be more than happy to help. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel py-5">
+        <div class="container-fluid container-custom">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="panel_content">
+                        <h2>Amazing Panel</h2>
+                        <p class="mb-4">We Offer You a Ammazing Panel Area to Build You're Dream And Make You're Creativity Bloom</p>
+                        <ul>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <li><img src="../../assets/images/web_console.svg"> Amazing Console</li>
+                                    <li><img src="../../assets/images/ftp.svg"> Quick File Upload</li>
+                                </div>
+                                <div class="col-md-7">
+                                    <li><img src="../../assets/images/mod.svg"> Fast Server Reinstalls</li>
+                                    <li><img src="../../assets/images/sub_users.svg"> Work With a Team</li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="owl-carousel" id="panel">
+						<img class="img-fluid" src="https://i.imgur.com/nKURZfx.png" alt="Panel Image">
+                        <img class="img-fluid" src="https://i.imgur.com/9FMxOul.png">
+                        <img class="img-fluid" src="https://i.imgur.com/Bwhfjet.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="py-5">
+    <div class="container-fluid container-custom">
+        <div class="need_more py-5 px-5 mb-5">
+            <span class="need_more_icon"></span>
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-8 col-md-8">
+                    <h2>Need to know more?</h2>
+                    <p>If you have any questions about any of our services, do not hesitate to reach out by getting in contact with us. We are here to serve you!</p>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex align-items-center">
+                    <div class="need_more_right float-end">
+                        <a href="https://discord.gg/8mfE5yjHTJ" class="btn">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer_links">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+            </div>
+            <p class="mb-0 white-text">&copy; 2024 LostHosting. All Rights Reserved.</p>
+	</footer>
+	
+    <!-- Jquery v3.6.1 -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script>
+    let coreValue = document.getElementById("coreValue");
+    let ramValue = document.getElementById("ramValue");
+    let ssdValue = document.getElementById("ssdValue");
+    let bwValue = document.getElementById("bwValue");
+    let priceValue = document.getElementById("priceValue");
+    let rangeSelector = document.getElementById("rangeSelector");
+    let buyLink = document.getElementById("buyLink");
+
+    rangeSelector.oninput = () => {
+        switch (rangeSelector.value) {
+            // Step 1 //
+            case "1":
+            coreValue.innerText = "100%";
+            ramValue.innerText = "8GB";
+            ssdValue.innerText = "20GB";
+            bwValue.innerText = "Unlimited";
+            priceValue.innerText = "3";
+            buyLink.setAttribute("href", "");
+            break;
+            // Step 2 //
+            case "2":
+            coreValue.innerText = "200%";
+            ramValue.innerText = "12GB";
+            ssdValue.innerText = "25GB";
+            bwValue.innerText = "Unlimited";
+            priceValue.innerText = "17";
+            buyLink.setAttribute("href", "");
+            break;
+            // Step 3 //
+            case "3":
+            coreValue.innerText = "250% ";
+            ramValue.innerText = "16GB";
+            ssdValue.innerText = "40GB";
+            bwValue.innerText = "Unlimited";
+            priceValue.innerText = "7";
+            buyLink.setAttribute("href", "");
+            break;
+            // Step 4 //
+            case "4":
+            coreValue.innerText = "400%";
+            ramValue.innerText = "24GB";
+            ssdValue.innerText = "60GB";
+            bwValue.innerText = "Unlimited";
+            priceValue.innerText = "37.70";
+            buyLink.setAttribute("href", "");
+            break;
+            // Step 5 //
+            case "5":
+            coreValue.innerText = "800%";
+            ramValue.innerText = "32GB";
+            ssdValue.innerText = "90GB";
+            bwValue.innerText = "Unlimited";
+            priceValue.innerText = "45";
+            buyLink.setAttribute("href", "");
+            break;
+			            // Default Values
+						default:
+            coreValue.innerText = "Unlimited";
+            ramValue.innerText = "Unlimited";
+            ssdValue.innerText = "Unlimited";
+            bwValue.innerText = "Unlimited";
+            priceValue.innerText = "default";
+            buyLink.setAttribute("href", "");
+            break;
+        }
+    };
+    </script>
+
+    <!-- Bootstrap v5.2.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- OWL Slider v2.3.4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Web Site Cookie -->
+    <script src="https://cdn.websitepolicies.io/lib/cookieconsent/cookieconsent.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+    // Panel Preview //
+    jQuery("#panel").owlCarousel({autoplay:!1,rewind:!0,margin:0,mouseDrag: true,nav:false,dots:false,lazyLoad:!0,items:1});
+    </script>
+</body>
+</html>
