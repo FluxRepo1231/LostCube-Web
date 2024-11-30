@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1919; /* Dark background */
+    color: white;
+}
+
+/* Container for the 404 page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Error message box */
+.error-message {
+    max-width: 500px;
+    padding: 40px;
+    background: rgba(53, 53, 53, 0.9); /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 404 Heading */
+h1 {
+    font-size: 120px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00ff00; /* Green color for the error code */
+    text-shadow: 0 0 10px #00ff00; /* Neon green glow */
+}
+
+/* Message under the 404 error code */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+/* Home link */
+.home-link {
+    color: #4CAF50; /* Green color for the home link */
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home-link:hover {
+    color: #00ff00; /* Neon green on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+}
+
+/* Logo Section */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 120px; /* Logo size */
+    height: auto;
+    filter: brightness(1.2); /* Slight brightness for the logo */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    filter: brightness(1.4); /* Slight increase in brightness on hover */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    .error-message {
+        padding: 20px;
+        width: 90%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .home-link {
+        font-size: 16px;
+    }
+
+    .logo-container img {
+        width: 100px; /* Smaller logo for mobile */
+    }
+}
