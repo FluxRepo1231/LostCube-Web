@@ -1,0 +1,132 @@
+@import url('../assets/css/Nav.css');
+@import url('../assets/css/footer.css');
+@import url('../assets/css/Planicon.css');
+@import url('../styles.css');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://i.imgur.com/bOudnSZ.png') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+.header-icon {
+    width: 140px; 
+    height: 140px; 
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+
+.header-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+
+.header h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.header p {
+    color: #ddd;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.game_plans {
+    background-color: #1a1a1a;
+    padding: 60px 0;
+}
+
+.game_plans .site_title h2 {
+    color: #28A745;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card h2 {
+    color: #28A745;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.card-value {
+    color: #bbb;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.card .row p {
+    color: #bbb;
+}
+
+.card .row span {
+    font-weight: bold;
+}
+
+.card .btn {
+    background-color: #28A745;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .game_plans .site_title h2 {
+        font-size: 2rem;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+}

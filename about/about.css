@@ -1,0 +1,210 @@
+
+
+@import url('../assets/css/Nav.css');
+@import url('../styles.css');
+@import url('../assets/css/footer.css');
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border-radius: 8px; 
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://wallpapercave.com/wp/wp2940341.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100%;
+  color: white;
+  line-height: 1.6;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus {
+  color: #29b74f;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  padding: 10px 30px;
+  background-color: #29b74f;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #238c3f;
+  transform: translateY(-5px);
+}
+
+.about-us {
+  padding: 80px 0;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.about-us h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #29b74f;
+}
+
+.about-us ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.about-us ul li strong {
+  color: #29b74f;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.team-member {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-member:hover {
+  transform: translateY(-12px);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.team-member-img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 150px;
+  margin-bottom: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.team-member-img:hover {
+  transform: scale(1.05);
+  border-color: #29b74f;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #29b74f;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #ddd;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.team-member + .team-member {
+  margin-top: 20px;
+}
+
+.team-member .btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #29b74f;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.team-member .btn:hover {
+  background-color: #238c3f;
+  transform: translateY(-3px);
+}
+
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}

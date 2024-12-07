@@ -1,0 +1,132 @@
+/* Footer Styles */
+footer {
+  background: linear-gradient(135deg, rgba(26, 25, 25, 0.9), rgba(53, 53, 53, 0.8)); /* Gradient background */
+  color: white;
+  padding: 20px 40px; /* Padding */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px; /* Space between sections */
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Logo */
+footer .footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+footer .footer-logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Footer Heading: Socials, Client Area, Legal */
+footer .footer-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  gap: 40px;
+}
+
+/* Section: Socials, Client Area, Legal */
+footer .footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  gap: 12px; /* Increased space between items */
+  width: 100%; /* Ensure full width */
+}
+
+/* Footer Links */
+footer .footer-section a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer .footer-section a:hover {
+  color: #00ff00; /* Green hover effect */
+  transform: translateY(-3px); /* Subtle lift effect */
+}
+
+/* Footer Social Icons */
+footer .footer-socials a {
+  font-size: 24px; /* Larger icon size */
+  color: #00ff00; /* Green color for icons */
+  transition: color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+footer .footer-socials a:hover {
+  color: #00cc00; /* Slightly darker green on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Footer Legal Links */
+footer .footer-legal a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .footer-legal a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Copyright Text */
+footer .footer-copyright {
+  font-size: 14px;
+  color: #ccc; /* Lighter text color */
+  text-align: center;
+  margin-top: 20px;
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Add margin to the top if needed */
+  font-size: 1rem;
+}
+
+/* Mobile-Responsive Footer Adjustments */
+@media (max-width: 768px) {
+  footer {
+      padding: 20px 15px; /* Reduced padding for mobile */
+  }
+
+  footer .footer-heading {
+      flex-direction: column; /* Stack headings on mobile */
+      align-items: center;
+      gap: 20px;
+  }
+
+  footer .footer-section {
+      align-items: center; /* Center links and icons on mobile */
+  }
+
+  footer .footer-socials a {
+      font-size: 20px; /* Adjust icon size for mobile */
+  }
+
+  footer .footer-links a {
+      font-size: 16px; /* Adjust font size for mobile */
+  }
+
+  footer .footer-copyright {
+      font-size: 12px; /* Smaller copyright text on mobile */
+      margin-top: 10px;
+  }
+}

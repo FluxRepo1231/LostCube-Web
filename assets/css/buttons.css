@@ -1,0 +1,54 @@
+/* Button Styles */
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  * Button Styling */
+.about-us .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+
+.about-us .btn:hover {
+  background-color: #218838;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #00b300;
+  transform: translateY(-3px);  /* Slight lift effect */
+}

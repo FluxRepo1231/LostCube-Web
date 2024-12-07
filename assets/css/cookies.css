@@ -1,0 +1,142 @@
+.cookie-consent-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.cookie-consent-icon:hover {
+    transform: scale(1.1);
+}
+.cookie-consent-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background for modal */
+    display: none;
+    z-index: 1001;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Modal content */
+.cookie-content {
+    background-color: #2C2C2C; /* Dark background for the modal */
+    color: #FFFFFF; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.cookie-content h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cookie-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Cookie Options (checkboxes) */
+.cookie-options {
+    margin-top: 15px;
+    text-align: left;
+    color: #DDDDDD; /* Light grey for text */
+}
+
+.cookie-options label {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cookie-options input {
+    margin-right: 10px;
+}
+
+/* Cookie Buttons */
+.cookie-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly; /* Evenly distribute buttons across the container */
+  gap: 15px; /* Space between the buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.cookie-buttons button {
+  background-color: #4CAF50; /* Green background for buttons */
+  color: white;
+  padding: 14px 30px; /* Increase padding for better button size */
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px; /* More rounded corners for a smoother look */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 120px; /* Minimum width to ensure buttons don’t shrink too small */
+  width: auto; /* Allow buttons to expand depending on content */
+  text-align: center; /* Center text inside the button */
+  font-weight: 600; /* Make button text bold */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.cookie-buttons button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.cookie-buttons button:active {
+  transform: translateY(1px); /* Button depression effect on click */
+}
+
+.cookie-buttons button#deny-cookies {
+  background-color: #f44336; /* Red for deny */
+}
+
+.cookie-buttons button#deny-cookies:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+.cookie-buttons button#save-cookies {
+  background-color: #008CBA; /* Blue for save */
+}
+
+.cookie-buttons button#save-cookies:hover {
+  background-color: #007B9E; /* Darker blue on hover */
+}
+
+/* Add focus styles for accessibility */
+.cookie-buttons button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.6); /* Blue outline on focus */
+}
+
+/* Modal fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

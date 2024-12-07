@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://i.imgur.com/qtEAekM.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Us - LostCube</title>
+
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LostCube - About Us">
+  <meta property="og:description" content="Learn more about LostCube and our team. We offer fast, reliable, and affordable hosting solutions.">
+  <meta property="og:image" content="https://i.imgur.com/qtEAekM.png">
+  <meta property="og:url" content="https://lostcube.sytes.net/about">
+  <meta property="og:site_name" content="LostCube">
+  <meta property="og:locale" content="en_US">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LostCube - About Us">
+  <meta name="twitter:description" content="Learn more about LostCube and our team. We offer fast, reliable, and affordable hosting solutions.">
+  <meta name="twitter:image" content="https://i.imgur.com/qtEAekM.png">
+  <meta name="twitter:url" content="https://lostcube.sytes.net/about">
+
+
+  <link rel="stylesheet" href="about.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const snowContainer = document.createElement('div');
+      snowContainer.classList.add('snow-container');
+      document.body.appendChild(snowContainer);
+    
+      function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.innerHTML = '❄'; 
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+        snowflake.style.opacity = Math.random();
+        snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+        snowContainer.appendChild(snowflake);
+    
+        setTimeout(() => {
+          snowflake.remove();
+        }, 5000); 
+      }
+    
+      setInterval(createSnowflake, 150);
+    });
+    </script>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="https://i.imgur.com/qtEAekM.png" alt="LostCube Logo" class="logo-image">
+      <span class="logo-text">LostCube</span>
+    </div>
+    <div class="nav-links">
+      <a href="https://discord.gg/8mfE5yjHTJ"><i class="fas fa-comments"></i> Discord Server</a>
+      <a href="https://lostcube-api.cubelarnodes.top/"><i class="fas fa-cogs"></i> Panel</a>
+      <a href="lostcube.sytes.net/Plans"><i class="fas fa-clipboard-list"></i> Plans</a>
+      <a href="https://lostcube.sytes.net"><i class="fas fa-home"></i> Home</a>
+    </div>
+    <div class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+  
+
+
+  <section class="about-us">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Welcome to LostCube! We are dedicated to providing top-tier hosting solutions that are fast, reliable, and affordable. Our team of experts works tirelessly to ensure your experience with us is seamless, with 24/7 support and state-of-the-art technology.</p>
+      
+      <h2>Our Mission</h2>
+      <p>Our mission is to deliver powerful hosting solutions that meet the needs of both individuals and businesses. We prioritize reliability, speed, and affordability, ensuring our clients get the best hosting experience possible.</p>
+      
+      <h2>Our Vision</h2>
+      <p>We aim to become a leading provider of hosting services, known for our innovation, customer-centric approach, and exceptional performance. We envision a world where every customer can access reliable hosting services that scale with their growth.</p>
+      
+      <h2>Our Values</h2>
+      <ul>
+        <li><strong>Reliability:</strong> We guarantee uptime and performance with a commitment to always being there when you need us.</li>
+        <li><strong>Customer-Centric:</strong> Our customers are at the heart of everything we do. Your satisfaction is our priority.</li>
+        <li><strong>Innovation:</strong> We are constantly improving our infrastructure and services to stay ahead in a competitive industry.</li>
+        <li><strong>Integrity:</strong> We uphold honesty and transparency in all our dealings, building trust with every interaction.</li>
+      </ul>
+
+      <h2>Meet the Team</h2>
+      <div class="team">
+        <div class="team-member">
+          <img src="chaze.png" alt="John Doe" class="team-member-img">
+          <h3>Chaze</h3>
+          <p>Founder</p>
+          <p>Chaze is the visionary behind LostCube, dedicated to building a service that truly cares for its customers.</p>
+        </div>
+        <div class="team-member">
+          <img src="smith.png" alt="Jane Smith" class="team-member-img">
+          <h3>Smith</h3>
+          <p>Founder and Lead Developer</p>
+          <p>Smith leads our development team, ensuring that LostCube remains at the forefront of technology.</p>
+        </div>
+        <div class="team-member">
+          <img src="haris.png" alt="Sarah Lee" class="team-member-img">
+          <h3>Haris</h3>
+          <p>Founder & Lead Staff Manager</p>
+          <p>Haris ensures that every customer’s experience is smooth and that their questions are answered promptly.</p>
+        </div>
+        <div class="team-member">
+          <img src="flux.png" alt="Flux" class="team-member-img">
+          <h3>Flux</h3>
+          <p>CEO & Manager</p>
+          <p>Flux ensures that every member has a better experience and that their questions are answered promptly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-logo">
+        <img src="https://i.imgur.com/qtEAekM.png" alt="Logo">
+    </div>
+    <div class="footer-heading">
+        <div class="footer-socials footer-section">
+            <p>Socials</p>
+            <a href="https://discord.com/invite/your-server-id" target="_blank">
+                <i class="fab fa-discord"></i> Discord
+            </a>
+        </div>
+        <div class="footer-links footer-section">
+            <p>Client Area</p>
+            <a href="https://lostcube-api.cubelarnodes.top/"><i class="fas fa-user"></i> Panel</a>
+            <a href="../404.html"><i class="fas fa-cogs"></i> Dashboard</a>
+        </div>
+        <div class="footer-legal footer-section">
+            <p>Legal</p>
+            <a href="../404.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+            <a href="../404.html"><i class="fas fa-file-alt"></i> Terms of Service</a>
+        </div>
+    </div>
+    <div class="footer-status">
+        <a href="https://status.ryzencloud.host" class="status-link">
+            <i class="fas fa-server"></i> Check Server Status
+        </a>
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2024 LostCube. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>

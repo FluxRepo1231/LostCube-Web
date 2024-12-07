@@ -1,0 +1,74 @@
+@import url('assets/css/aboutus.css');
+@import url('assets/css/buttons.css');
+@import url('assets/css/cookies.css');
+@import url('assets/css/features.css');
+@import url('assets/css/footer.css');
+@import url('assets/css/main.css');
+@import url('assets/css/Nav.css');
+@import url('assets/css/status.css');
+@import url('assets/css/Hero.css');
+@import url('assets/css/Banner.css');
+@import url('assets/css/Fade.css');
+@import url('assets/css/logo.css');
+@import url('assets/css/snow.css');
+@import url('assets/css/Parts.css');
+@import url('assets/css/discord.css');
+@import url('assets/css/top.css');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+
+body {
+  background-image: url('https://wallpapercave.com/wp/wp2940341.png');
+  background-color: black;
+  background-blend-mode: darken;  
+  background-size: cover; 
+  background-position: center center; 
+  background-attachment: fixed; 
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #ddd;
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, p {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

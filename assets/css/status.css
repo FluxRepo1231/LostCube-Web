@@ -1,0 +1,25 @@
+/* Footer Status Link */
+.footer-status {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  
+  .status-link {
+    text-decoration: none;
+    color: #28a745; /* Green color for status link */
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center; /* Align icon with text */
+  }
+  
+  .status-link i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.3rem; /* Size of the icon */
+  }
+  
+  .status-link:hover {
+    color: #218838; /* Darker green on hover */
+  }
+  

@@ -1,0 +1,130 @@
+/* Info Section */
+.info-section {
+    padding: 60px 0;
+    background-color: #000000; /* Dark background */
+    color: #fff; /* White text */
+    position: relative;
+    overflow: hidden; /* To prevent overflow issues when using animations */
+  }
+  
+  /* Container */
+  .info-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Content Wrapper */
+  .info-section .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  /* Text Content */
+  .info-section .text-content {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6); /* Slight background for readability */
+    padding: 20px;
+    border-radius: 12px;
+    /* Removed box-shadow from the text-content to prevent the glow */
+  }
+  
+  .info-section .text-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00ff00; /* Neon effect color */
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Neon glow */
+  }
+  
+  .info-section .text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .info-section .text-content:hover p {
+    opacity: 1; /* Fade effect on hover */
+  }
+  
+  /* Image Content */
+  .info-section .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info-section .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 255, 0, 0.4); /* Neon green shadow */
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .info-section .image-content img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    filter: brightness(1.1); /* Brighten on hover */
+  }
+  
+  .info-section .image-content img:active {
+    transform: scale(0.98); /* Slight shrink effect when clicked */
+  }
+  
+  .info-section .image-content img:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: rgba(0, 255, 0, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Behind the image */
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.3;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .info-section .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .info-section .text-content,
+    .info-section .image-content {
+      flex: none;
+      width: 100%;
+    }
+  
+    .info-section .text-content h2 {
+      font-size: 2.4rem;
+    }
+  
+    .info-section .text-content p {
+      font-size: 1rem;
+    }
+  }
